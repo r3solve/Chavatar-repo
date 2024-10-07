@@ -11,9 +11,14 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        lint: "#fcaa67",
+        border: "#202020",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes:['light']
+  }
 };
 export default config;
