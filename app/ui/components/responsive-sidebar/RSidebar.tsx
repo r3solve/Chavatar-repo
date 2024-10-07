@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { AlignJustify, EarthIcon, Library, MessageSquare, Plus, Settings2} from "lucide-react";
 import Logo from "../logo/Logo";
 import Link from "next/link";
+
 const navItems = [
 
 ]
@@ -28,10 +29,10 @@ export default function RSidebar() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className="menu bg-black text-white   min-h-full w-64 p-4">
+        <div className=" bg-black text-white   min-h-full w-64 p-4">
           {/* Sidebar content here */}
           <Logo />
-          <li>
+          
             <Link
               href={"/c/new"}
               className="w-36 btn hover:text-border  text-white mx-4 h-12 hover:shadow-md transition-all hover:shadow-[#fcaa67]  bg-[#1b1b1b] rounded-full justify-center border items-center  border-[#1b1b1b]  flex flex-row"
@@ -39,9 +40,9 @@ export default function RSidebar() {
               <Plus className="text-lint" />
               <span className="text-lg">Create</span>
             </Link>
-          </li>
+          
           <div className="w-full my-4  h-1/2 px-4">
-            <li>
+            
               <Link
                 href="/c"
                 className="flex hover:bg-[#1a1a1a] items-center   flex-row h-12 rounded-xl p-2 space-x-3"
@@ -49,9 +50,9 @@ export default function RSidebar() {
                 <MessageSquare strokeWidth={1.2} />
                 <span className=" text-base mx-4">New Chat</span>
               </Link>
-            </li>
+            
 
-            <li>
+           
               <Link
                 href="/discover"
                 className="flex hover:bg-[#1a1a1a] items-center   flex-row h-12 rounded-xl p-2 space-x-3"
@@ -59,9 +60,9 @@ export default function RSidebar() {
                 <EarthIcon strokeWidth={1.2} />
                 <span className=" text-base mx-4">Discover</span>
               </Link>
-            </li>
+            
 
-            <li>
+            
               <Link
                 href="/history"
                 className="flex hover:bg-[#1a1a1a] items-center   flex-row h-12 rounded-xl p-2 space-x-3"
@@ -69,7 +70,7 @@ export default function RSidebar() {
                 <Library  />
                 <span className=" text-base mx-4">Library</span>
               </Link>
-            </li>
+            
           </div>
 
           {/*Lower part of the side bar */}
